@@ -9,11 +9,12 @@ import NewProduct from './react-router/NewProduct';
 import Users from './react-router/Users';
 import Userdetails from './react-router/Userdetails';
 import Alluser from './react-router/Alluser';
+import Hook from './react-hooks/Hook'
 
 function App() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
      {/* // for showing on all route any component declare it outside the <Routes></Routes> */}
     <Routes>
       <Route path="/" element={ <Home/> }></Route>
@@ -36,6 +37,10 @@ function App() {
        <Route path ="all" element = {<Alluser/>}></Route>
       <Route path =":id" element = {<Userdetails/>}></Route>
      </Route>
+    {/* // for learn react hook  */}
+
+    <Route path = 'react-hook' element = {<Hook/>}></Route>
+
     </Routes>
     </>
   );

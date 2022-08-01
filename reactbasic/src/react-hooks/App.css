@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    position: sticky;
+    top : 0px;
+    height : 10vh;
+    width:  100%;
+    color : #3661ef;
+    background-color: white;
+    border-bottom :1px solid rgb(209, 213, 219);
+}
+
+
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    margin-top: 10vh;
+    transition: 0.5s;
+    border-right: 1px solid rgb(209, 213, 219);
+    color : #3661ef;
+   
+  }
+    
+main{
+    padding: 1rem;
+}
